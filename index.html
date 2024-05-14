@@ -4,7 +4,9 @@
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+  <div class="top-bar">
 <div id="menu">
+  <ul>
 <li><a href="#about">About Me</a></li>
 <li><a href="#photos">My Photos</a></li>
 <li><a href="#playlist">My Playlist</a></li>
@@ -12,96 +14,64 @@
 <li><a href="#qrcoder">QR code</a></li>
 <li><a href="#spa">Q&A</a></li>
 <li><a href="#contact">Contact Me</a></li>
+</ul>
+
 </div>
-		  
+</div>
+<br/>
+<div class="imag">
+  <img src="images/robi.png" alt="Image description" style="width: 50%; max-width: 300px;">
+</div>
+
 <section id="about" class="section">
 <br/>
+
 <br/>
 <br/>
 <br/>
+<h1>about me</h1>
+<b>Reuven Rivlin was born in Jerusalem during the Mandate era to the Rivlin family, which has lived in Jerusalem since 1809. He is a descendant of students of the Vilna Gaon. His parents were Rachel "Ray" Rivlin and Yosef Yoel Rivlin. Yosef created the first Hebrew edition of the Quran and was a candidate for president of Israel in 1957 before withdrawing in favor of the incumbent Yitzhak Ben-Zvi. Rivlin attended Gymnasia Rehavia high school, and served in the Intelligence Corps of the Israel Defense Forces. During the Six-Day War, he fought with the Jerusalem Brigade and accompanied the Paratroopers Brigade as an intelligence officer. After military service, he studied law at the Hebrew University of Jerusalem. Before entering politics, Rivlin served as legal advisor of the Beitar Jerusalem Sports Association, manager of the Beitar football team, and chairman of the association; member of the Jerusalem City Council; member of the El Al Board; Chairman of the Israel Institute for Occupational Safety and Hygiene; a board member of the Khan Theater, and board member of the Israel Museum.</b>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+
 </section>
 
 <section id="photos" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 my photos
 <br/>
+<div class="imag">
+  <img src="images/robi-armi.png" alt="Image description" style="width: 50%; max-width: 300px;">
+</div>
 <br/>
+<div class="imag">
+  <img src="images/robi-nasi.png" alt="Image description" style="width: 50%; max-width: 300px;">
+</div>
 <br/>
 </section>
 
 <section id="playlist" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
 <br/>
 my playlist
+
+<div style="display: flex; justify-content: center; align-items: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qjPqs2fE-aY&ab_channel=%D7%A2%D7%99%D7%93%D7%9F%D7%A2%D7%9E%D7%93%D7%99IdanAmedi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 <br/>
 <br/>
-<br/>
-</section>
+
 
 <section id="like" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 give me a like
-<br/>
+<div class="fb-like" data-href="https://www.facebook.com/ReuvenRivlin/?locale=he_IL" data-layout="button" data-size="small" data-show-faces="false"></div>
 <br/>
 <br/>
 </section>
@@ -152,7 +122,7 @@ ans
 <br/>
 </section>
 
-<section id="contact" class="section">
+
 <br/>
 <br/>
 <br/>
@@ -170,6 +140,14 @@ ans
 <br/>
 <br/>
 contact me
+<section id="contact" class="section">
+  <button class="email-button" onclick="openEmailPage()">Send Email</button>
+
+  <script>
+    function openEmailPage() {
+      window.open('mailto:example@example.com', '_blank');
+    }
+  </script>
 <br/>
 <br/>
 <br/>
@@ -189,5 +167,15 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+ <script>
+ (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfb=true&version=v3.2";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>

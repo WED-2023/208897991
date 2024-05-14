@@ -1,7 +1,51 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+.blue-table {
+	background-color: #ADD8E6; /* צבע תכלת בהיר */
+  }
+  .top-bar {
+	background-color: rgb(184, 129, 183);
+	height: auto;
+	width: 100%;
+	display: flex;
+	color: #000;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 10px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.spacer {
+	margin: 100 px;
+	
+}
 #menu
 {
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+
 }
+#menu ul li a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+}
+#menu ul {
+	list-style-type: none;
+	margin: 5;
+	padding: 0;
+	display: flex;
+}
+
+#menu ul li {
+	margin-right: 30px;
+	
+}
+.imag {
+	display: flex; justify-content: center; align-items: center;
+}
+
+

@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/GmyrjvXu)
+
 
 # About Reuven Rivlin
 I established the website in recognition of the help of Rivlin Rivlin in the fight to return Noa Argamani from captivity
